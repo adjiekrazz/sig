@@ -13,26 +13,21 @@ body {
     text-align: center;
 }
 
-nav > ul {
-    padding: 0;
-}
-
-nav > ul > li, nav > ul > li > a {
+.menu-items {
     text-decoration: none;
     list-style-type: none;
     padding: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navigation-menu {
     grid-column: span 2;
 }
-
 .navigation-menu > fieldset {
-    min-height: 400px;
-}
-
-.navigation-menu > fieldset > legend {
-    margin-left: 10px;
+    min-height: 500px;
 }
 
 .content {
@@ -40,11 +35,15 @@ nav > ul > li, nav > ul > li > a {
 }
 
 .content > fieldset {
-    min-height: 400px;
+    min-height: 500px;
 }
 
-.content > fieldset > div, .content > fieldset > legend {
+.content > fieldset > div {
     margin-left: 20px;
+}
+
+.hiddenContent {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
